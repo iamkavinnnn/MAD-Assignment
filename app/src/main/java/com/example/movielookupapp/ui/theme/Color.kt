@@ -2,10 +2,30 @@ package com.example.movielookupapp.ui.theme
 
 import androidx.compose.ui.graphics.Color
 
-val Purple80 = Color(0xFFD0BCFF)
-val PurpleGrey80 = Color(0xFFCCC2DC)
-val Pink80 = Color(0xFFEFB8C8)
+// Main backgrounds
+val AppBackground = Color(0xFF10131A)
+val AppSurface = Color(0xFF1B202B)
+val AppSurfaceVariant = Color(0xFF282F3D)
 
-val Purple40 = Color(0xFF6650a4)
-val PurpleGrey40 = Color(0xFF625b71)
-val Pink40 = Color(0xFF7D5260)
+// Main accent colours
+val AppPrimary = Color(0xFF55D6BE)
+val AppSecondary = Color(0xFFFFC857)
+val AppTertiary = Color(0xFF8DA9FF)
+
+// Text colours
+val AppTextPrimary = Color(0xFFF5F7FA)
+val AppTextSecondary = Color(0xFFB0B8C5)
+
+// Status colours
+val AppError = Color(0xFFFF6B6B)
+
+// Dark theme supporting colours
+val AppOnPrimary = Color(0xFF10201D)
+val AppOnBackground = Color(0xFFF5F7FA)
+val AppOnSurface = Color(0xFFF5F7FA)
+
+// Light theme colours
+val LightBackground = Color(0xFFF5F7FA)
+val LightSurface = Color(0xFFFFFFFF)
+val LightPrimary = Color(0xFF087F70)
+val LightText = Color(0xFF17212B)
