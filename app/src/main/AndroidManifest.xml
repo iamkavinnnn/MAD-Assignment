@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- A1: ADD the INTERNET permission above <application> in your existing manifest. -->
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application>
+        <!-- ... keep everything Android Studio generated ... -->
+    </application>
+
+</manifest>
