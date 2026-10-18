@@ -1,9 +1,7 @@
-# A1: ADD these lines to the matching sections of your existing gradle/libs.versions.toml.
-# Keep the entries Android Studio already created (agp, kotlin, compose BOM, navigation, etc.).
 
 [versions]
-# KSP must match your Kotlin version. If your [versions] has kotlin = "2.0.21", use "2.0.21-1.0.28".
-# For a different Kotlin version, pick the KSP release that starts with the same number.
+agp = "8.9.1"
+kotlin = "2.0.21"
 ksp = "2.0.21-1.0.28"
 room = "2.7.1"
 retrofit = "2.11.0"
@@ -26,6 +24,8 @@ coil-compose = { group = "io.coil-kt", name = "coil-compose", version.ref = "coi
 androidx-lifecycle-viewmodel-compose = { group = "androidx.lifecycle", name = "lifecycle-viewmodel-compose", version.ref = "lifecycleViewmodelCompose" }
 
 [plugins]
-ksp = { id = "com.google.devtools.ksp", version.ref = "ksp" }
-# Already there if you followed the type-safe navigation workshop:
+android-application = { id = "com.android.application", version.ref = "agp" }
+kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+kotlin-compose = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }
 kotlin-serialization = { id = "org.jetbrains.kotlin.plugin.serialization", version.ref = "kotlin" }
+ksp = { id = "com.google.devtools.ksp", version.ref = "ksp" }
