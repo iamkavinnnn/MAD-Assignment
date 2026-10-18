@@ -7,9 +7,9 @@ import android.widget.Toast
 import com.example.movielookupapp.model.Movie
 import com.example.movielookupapp.model.shareText
 
-// R6: hands the movie to another app (Messages, WhatsApp, email...) with a share intent.
+//  hands the movie to another app (Messages, WhatsApp, email...) with a share intent.
 // - No runtime permission is needed for sharing.
-// - Cancelling the chooser just returns to the app; nothing else happens.
+// - Cancelling the chooser just returns to the app and nothing else happens.
 // - If no app can receive it, we show a short message instead of crashing.
 fun shareMovie(context: Context, movie: Movie) {
     val sendIntent = Intent(Intent.ACTION_SEND)

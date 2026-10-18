@@ -4,17 +4,17 @@ import com.example.movielookupapp.model.local.SortOrder
 import com.example.movielookupapp.model.local.Viewing
 import com.example.movielookupapp.model.local.WatchlistItem
 
-// One row on the Watchlist screen: a saved movie plus numbers worked out from its viewings.
-// This is where the relationship between the two tables is used by the core task (R3).
+// This is where the relationship between the two tables is used by the core task.
 data class WatchlistEntry(
     val item: WatchlistItem,
-    val status: String,          // "Plan to watch" or "Watched"
+    val status: String,          // "Planning to watch" or "Watched"
     val viewingCount: Int,
     val averageRating: Double?,  // null if never watched
     val lastWatched: Long?       // null if never watched
 )
 
-// Joins each saved movie to its own viewings, using movieId (Lecture 7, foreign keys).
+// Joins each saved movie to its own viewings, using movieId
+// ref:(Lecture 7, foreign keys).
 fun buildEntries(items: List<WatchlistItem>, viewings: List<Viewing>): List<WatchlistEntry> =
     items.map { item ->
         val mine = viewings.filter { it.movieId == item.movieId }
