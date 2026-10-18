@@ -1,11 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- A1: ADD the INTERNET permission above <application> in your existing manifest. -->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
 
     <uses-permission android:name="android.permission.INTERNET" />
 
-    <application>
-        <!-- ... keep everything Android Studio generated ... -->
+    <application
+        android:allowBackup="true"
+        android:label="Movie Watchlist"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MovieLookupApp">
+
+        <activity
+            android:name="com.example.movielookupapp.MainActivity"
+            android:exported="true">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+
     </application>
 
 </manifest>
