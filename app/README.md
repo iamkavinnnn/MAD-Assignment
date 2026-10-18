@@ -50,7 +50,7 @@ Out of scope: ser accounts and cloud sync. Showing where a movie can be streamed
 
 ---
 
-## Demonstrating the network features (R4)
+## Demonstrating the network features
 
 | What to show | How |
 |---|---|
