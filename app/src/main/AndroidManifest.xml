@@ -6,7 +6,8 @@
     <application
         android:allowBackup="true"
         android:label="Movie Watchlist"
-        android:supportsRtl="true">
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MovieLookupApp">
 
         <activity
             android:name="com.example.movielookupapp.MainActivity"
@@ -18,6 +19,7 @@
             </intent-filter>
 
         </activity>
+
     </application>
 
 </manifest>
