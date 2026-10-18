@@ -5,8 +5,6 @@ Group 12: Kavin Shanmugam and Sachin Senaratne
 
 An Android app (Kotlin, Jetpack Compose, MVVM) for keeping a movie watchlist and logging what you have watched.
 
----
-
 ## App description
 
 Users: Casual film fans who currently keep "movies to watch" in notes apps, screenshots or group chats, and forget what they have already seen or whether they liked it.
@@ -16,8 +14,6 @@ Core task: Save a movie to a watchlist, then log a viewing of it: the date watch
 Data: Two related Room tables. `watchlist_items` holds one row per saved movie. `viewings` holds one row per time a movie was watched, linked by `movieId` (one movie, many viewings). Each movie's status, viewing count and average rating are calculated from its viewings. DataStore saves the watchlist sort order. Movie information comes from the TMDB API.
 
 Out of scope: ser accounts and cloud sync. Showing where a movie can be streamed.
-
----
 
 ## Build steps
 
@@ -40,15 +36,11 @@ Out of scope: ser accounts and cloud sync. Showing where a movie can be streamed
 4. Click **File -> Sync Project with Gradle Files**.
 5. Click **Build -> Rebuild Project**.
 
----
-
 ## Run steps
 
 1. Start an emulator, or connect a phone with USB debugging turned on.
 2. Select the **app** run configuration and press **Run**.
 3. The app opens on the **Trending** tab. Use the bottom bar to switch between **Trending**, **Search** and **Watchlist**.
-
----
 
 ## Demonstrating the network features
 
@@ -71,8 +63,6 @@ The app shares a movie with another app using Android's share sheet.
 3. **Cancel:** open the share sheet again and press Back without choosing an app. You return to the app with nothing changed.
 
 Sharing needs no permissions. If no app can receive the share, a short message appears instead of crashing.
-
----
 
 ## External Data and libraries Used
 
